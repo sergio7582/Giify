@@ -6,7 +6,7 @@ export default function getGifs ({keyword = 'Cats'} = {}){
       .then(res => res.json())
       .then(response => 
         {
-        const{data} = response
+        const{data} = response   
             if(Array.isArray(data))
             {
                 const gifs = data.map(image => 
